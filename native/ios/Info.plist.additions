@@ -1,0 +1,24 @@
+<!--
+  Merge these keys into ios/App/App/Info.plist after `npx cap add ios`.
+  Required for App Store microphone + deep links.
+-->
+<key>NSMicrophoneUsageDescription</key>
+<string>Notio needs the microphone to capture your voice and turn it into mind maps.</string>
+<key>NSSpeechRecognitionUsageDescription</key>
+<string>Notio may use on-device speech recognition as a fallback when typing by voice.</string>
+<key>UIBackgroundModes</key>
+<array>
+  <string>audio</string>
+</array>
+<key>CFBundleURLTypes</key>
+<array>
+  <dict>
+    <key>CFBundleURLName</key>
+    <string>com.notio.app</string>
+    <key>CFBundleURLSchemes</key>
+    <array>
+      <string>notio</string>
+    </array>
+  </dict>
+</array>
+<!-- Associated Domains capability in Xcode: applinks:notiolive.com -->

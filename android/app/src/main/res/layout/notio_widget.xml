@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:padding="12dp" android:background="#090D15">
+    <LinearLayout android:layout_width="92dp" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+        <ImageView android:id="@+id/notio_dolphin" android:layout_width="80dp" android:layout_height="64dp" android:src="@drawable/notio_dolphin" android:contentDescription="Dolphin"/>
+        <TextView android:id="@+id/notio_level" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp" android:gravity="center" android:textColor="#F2F5FA" android:textSize="12sp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:orientation="vertical">
+        <TextView android:id="@+id/notio_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:ellipsize="end" android:textColor="#9CB0CA" android:textSize="11sp"/>
+        <LinearLayout android:id="@+id/notio_row1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <Button android:id="@+id/notio_check1" android:layout_width="48dp" android:layout_height="48dp" android:textColor="#50D9D4" android:contentDescription="Complete first step"/>
+            <TextView android:id="@+id/notio_task1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:maxLines="3" android:ellipsize="end" android:textColor="#F2F5FA" android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/notio_row2" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <Button android:id="@+id/notio_check2" android:layout_width="48dp" android:layout_height="48dp" android:textColor="#50D9D4" android:contentDescription="Complete second step"/>
+            <TextView android:id="@+id/notio_task2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:maxLines="3" android:ellipsize="end" android:textColor="#F2F5FA" android:textSize="13sp"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/notio_row3" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <Button android:id="@+id/notio_check3" android:layout_width="48dp" android:layout_height="48dp" android:textColor="#50D9D4" android:contentDescription="Complete third step"/>
+            <TextView android:id="@+id/notio_task3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:maxLines="3" android:ellipsize="end" android:textColor="#F2F5FA" android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
